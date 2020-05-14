@@ -27,7 +27,7 @@ public class CityRestController {
         City theCity = cityService.findById(cityId);
 
         if (theCity == null) {
-            throw new RuntimeException("Employee id not found - " + cityId);
+            throw new RuntimeException("City id not found - " + cityId);
         }
 
         return theCity;
